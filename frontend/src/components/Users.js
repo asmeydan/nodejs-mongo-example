@@ -12,11 +12,11 @@ const Users = ({ data }) => {
   }
 
   return (
-    <div className=" w-full flex-1 grid grid-cols-3 gap-5 px-5 overflow-auto">
+    <div className=" w-full flex-1 grid grid-cols-1 sm:grid-cols-3 gap-5 px-5 overflow-auto">
       {data.map((user) => {
         return (
           <div
-            className=" w-full bg-purple-600 rounded-xl flex flex-row gap-20 justify-center items-center h-20"
+            className=" w-full bg-purple-600 rounded-xl flex flex-row gap-5 md:gap-10 justify-center items-center h-20"
             key={user._id}
           >
             <div>
